@@ -1,0 +1,132 @@
+/*Esto es un comentario de línea*/
+
+/* 
+Esto
+es un comentario
+de bloque
+Por ejemplo 
+Autor: Nombre del Autor
+Fecha: Fecha de Creación
+Descripción: Este archivo CSS contiene los estilos para el sitio web X.
+*/
+
+/* Secciones de un código en css 
+1- Comentarios de cabecera
+
+2- Reglas de estilo, ordenados por especificidad :
+    a- Reglas universales.
+    b- Reglas generales root o <html>, <body>, header, footer, main 
+    c- Otros selectores de tipo o etiquetas: hi, p, span, a
+    d- selectores de id 
+    e- selectores de clase
+    f- selectores especificos o pseudo-clases
+
+3- Media Queries 
+*/
+
+/* Reglas de estilo */
+/* Establecer el tamaño de fuente base utilizando :root */
+
+/* a- Reglas universales. 
+ * {
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+En este caso establecemos espacio de trabajo y márgentes y la convención de bordes
+*/
+
+
+/* b- reglas generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para selectores de etiqueta */
+/* div * {
+    
+    border: 1px solid blue;
+} */
+
+/* selectores de clase */
+/* header */
+.header_logo {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    text-align: left;
+    font-size: 2rem;
+    
+    text-decoration: none;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.logo-color i{
+     color: #f2f2f2;
+}
+
+/* body */
+.banner {
+    position: relative;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.banner_content h1{
+    font-size: 3rem;
+    line-height: 0rem;
+}
+
+.banner_content h2{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    }
+
+.scroll_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Color del botón */
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem; /* Tamaño del botón */
+    border-radius: 5px;   
+}
+
+.video_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para las tarjetas de horóscopo */
+.horoscopes {
+    padding: 50px 20px; /* Ajusta el padding según tus necesidades */
+}
+
+.horoscope_card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.horoscope_card h2 {
+    color: #333;
+}
