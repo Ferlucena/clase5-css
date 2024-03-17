@@ -4,36 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- enlace a estilos -->
+    
+    <!-- CSS externo -->
     <link rel="stylesheet" href="./static/css/style.css">
+    
     <!-- Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <title>Horóscopo sentí tu suerte, vivir en positivo</title>
+   
     <!-- Enlace a Font Awesome -->
     <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script></head>
+
+    <!-- CSS interno -->
+<!--     <style>
+        /* CSS interno */
+        h1 {
+            color: blue;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+            ;
+        }
+    </style> -->
+
+
     
 <body>
     <header>
-
+        <!-- Selectores básicos div id -->
         <div class="header_logo logo-color">  
             <a href="">
-            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-moon "></i>
             </a>
-        </div>
-      
+        </div>      
     </header>
 
     <!-- notacion bem (block element modifier) bock_element-modifier -->
     <main>
         <section class="banner">
             <div class="banner_content">
-                <h1>Tu Horóscopo Hoy</h1>
-                <h2><i class="fa-solid fa-moon"></i>&nbsp;Sentí tu suerte, viví en positivo</h2>
+                <h1 >Tu Horóscopo Hoy</h1> <!-- CSS en línea --> <!-- style="font-size: 50px;" -->
+                <h2>Sentí tu suerte, viví en positivo</h2>
                 <br><br>
                 <!-- enlace boton de inicio -->
-                <a href="#horoscopes" class="scroll_button">Click para continuar...</a>
+                <a href="#horoscopes" class="scroll_button">Pedí tu horoscopo</a>
             </div>
             <!-- Video de fondo -->
             <video autoplay loop muted class="video_background">
